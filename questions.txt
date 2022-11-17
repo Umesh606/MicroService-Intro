@@ -1,0 +1,151 @@
+1. Hybris: How user search works. 
+2. Create table in store
+3. OOTB types in hybris
+4. What’s Tiered Promos
+5. Hybris version
+6. HMC -> 
+7. Toggle feature in store
+8. What’s base store
+9. Solar search
+10. Quote?
+11. Autocreate in items.xml
+12. Difference between hybris cloud vs hybris in AWS cloud
+13. Various modules in hybris
+
+Think about the basic, why we are using, is there any other way.?
+Learning basics of hybris.
+________________________
+14. Oder splitting technique —> strategy
+15. Hybris OAuth ->
+16. Access rights ->
+17. OCC -> how it’s integrated.?
+18. Personale search query?
+19. Classification of the products in hybris?
+20. Alias for the bean —> 
+21. Solar index, how to add.?
+22.  Relation one-to-many in hybris —> 
+23. What initial=true in items.xml
+24. Checkout flow technical —> chain of action
+
+____________________
+Dish
+1. Rest template alternative
+2. Web client 
+3. Ci/CD env configuration -> ask Anil
+4. Lamda configuration in AWS
+5. What all AWS. Services you have worked.
+6. What’s server less in AWS
+7. Why use nodejs than java in lamda
+8. Logs configuration (Centralised/Distributed)
+9. 
+{
+
+	// configuration env level
+// cloud configuration, what other teams are doing.
+// programming touch —>  keep practice
+}
+
+
+
+Coupling, cohesion
+Inner class, 
+Thread local,
+Executor service
+Predicate interface
+Stream,
+Map, and flat map
+Prototype design pattern
+Solid patterns,
+List vs Linked list
+Hashmap working
+
+ACID,
+INDEX two column search
+Interface vs abstract, inheritance
+PK vs unique key
+Lazy loading
+Java sorting algorithms
+Diff array list vs linked list
+@component, @springbootApplication, @Repo
+
+EPSILON
+SOLID —> Interface segregation —> realtime example.
+Types of indexes
+Micro service -> concurrency request and succeeding failures
+ConcurrentHashMap —> internal working —> add/substract
+How to call one micro service -> another micro service
+Security in the current application
+
+Service registry, api gateway, security, spring boot annotation, 
+Functional interfaces in java 8, what’s map —> 
+Service discovery, call another micro service, 
+
+
+Valtech:
+Interface vs abstract with example
+Where the beans are defined  in spring app
+What’s request mapping
+Who creates the bean in spring
+Component scan
+What’s mvc
+Delete(refresh) table every 30 mins but should be available anytime
+Items.xml and beans.xml
+What’s business process
+Email architecture in hybris
+Properties files used in spring
+
+
+Saga in microservices
+Design patterns SOLID
+HashMap working
+arrayList vs LinkedList
+Design patterns and design principles
+
+custom/tgtupdate/src/au/com/target/tgtupdate/setup/UpdateSystemSetup.java
+
+hybris:
+Data model in hybris
+Ant extgen
+Ant modulegen
+Autocreate and generation in modifier
+How to save csv in hybris
+Path of modifiers in items.xml
+Save 3 fields from the UI in the hybris
+Difference between products and categories
+
+
+
+1. Hashmap implementation
+2. Fail safe and fail fast
+3. Load balancing
+4. Service failures
+5. Security
+6. Group age by range and implement in the rest api
+7. Select 2nd highest age
+8. Java 8 features,
+9. serialization
+10. Cascade in hibernate
+11. Observer pattrn, factory patter, decorator pattern
+12. Terminal vs intermediate 
+13. Transactions management in spring and springbok
+14. Caching, secondary cashing
+15. Failures in micro service
+16. Circuit breaker in MS
+17. Load balancer in MS
+18. 
+
+
+SELECT CASE WHEN `p_age` < 18 THEN 'under 18' WHEN `p_age` 
+BETWEEN 18 and 29 THEN '18-29' WHEN `p_age` 
+BETWEEN 30 and 39 THEN '30-39' WHEN `p_age` 
+BETWEEN 40 and 49 THEN '40-49' WHEN `p_age` 
+BETWEEN 50 and 59 THEN '50-59' WHEN `p_age` 
+BETWEEN 60 and 69 THEN '60-69' WHEN `p_age` 
+BETWEEN 70 and 79 THEN '70-79' WHEN `p_age` > 80 
+THEN 'Over 80' END as RANGE_AGE, count(`id`) as COUNT FROM `tb_people_quarantine` 
+GROUP BY RANGE_AGE ORDER BY RANGE_AGE";
+
+
+
+SELECT stock, SUM(CASE type WHEN ‘sell’ THEN sval	
+							WHEN ‘buy’ THEN sval * -1 END ) as “profit/loss”  FROM Stocks Group by stock;
